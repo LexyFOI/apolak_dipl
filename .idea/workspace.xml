@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdba4948-5487-48ea-a26a-74bc9a1de8ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_12__11__2020__02_53.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/apolak_dipl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apolak_dipl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,35 +137,53 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kAale7ImiKDrtgV1k7WONvhzDL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TZKevidencija" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.StudentManagementTest.a_student_can_be_created">
-    <configuration name="StudentManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.EventManagementTest">
+    <configuration name="EventManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest.a_student_can_be_created" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="a_student_can_be_created" scope="Method" />
+    <configuration name="EventManagementTest.an_event_requires_a_payment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_a_payment" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EventManagementTest.an_event_requires_a_price" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_a_price" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EventManagementTest.an_event_requires_an_event_description" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_an_event_description" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EventManagementTest.an_event_requires_the_points" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_the_points" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.StudentManagementTest.a_student_can_be_created" />
-        <item itemvalue="PHPUnit.StudentManagementTest" />
+        <item itemvalue="PHPUnit.EventManagementTest" />
+        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_the_points" />
+        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_an_event_description" />
+        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_a_price" />
+        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_a_payment" />
       </list>
     </recent_temporary>
   </component>
@@ -186,37 +207,51 @@
       <workItem from="1605190553987" duration="5524000" />
       <workItem from="1605209635983" duration="5270000" />
       <workItem from="1605215643430" duration="30000" />
-      <workItem from="1605350842749" duration="981000" />
+      <workItem from="1605350842749" duration="15450000" />
+      <workItem from="1605484926751" duration="36870000" />
     </task>
+    <task id="LOCAL-00001" summary="creating a functional test a_student_can_be_created">
+      <created>1605354217941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605354217941</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="creating a functional test a_student_can_be_created" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating a functional test a_student_can_be_created" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1027" y="89" key="CommitChangelistDialog2" timestamp="1605354215457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1027" y="89" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605354215457" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605209595973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605209595973" />
-    <state width="1877" height="340" key="GridCell.Tab.0.bottom" timestamp="1605302658967">
+    <state width="914" height="338" key="GridCell.Tab.0.bottom" timestamp="1605653890872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605302658967" />
-    <state width="1877" height="340" key="GridCell.Tab.0.center" timestamp="1605302658966">
+    <state width="914" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
+    <state width="914" height="338" key="GridCell.Tab.0.center" timestamp="1605653890872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605302658966" />
-    <state width="1877" height="340" key="GridCell.Tab.0.left" timestamp="1605302658966">
+    <state width="914" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
+    <state width="914" height="338" key="GridCell.Tab.0.left" timestamp="1605653890872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605302658966" />
-    <state width="1877" height="340" key="GridCell.Tab.0.right" timestamp="1605302658966">
+    <state width="914" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
+    <state width="914" height="338" key="GridCell.Tab.0.right" timestamp="1605653890872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605302658966" />
+    <state width="914" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1605209597941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,9 +268,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605209597941" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1605208624309">
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1605430528301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605208624309" />
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605430528301" />
+    <state x="906" y="168" key="SettingsEditor" timestamp="1605453953646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="906" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605453953646" />
+    <state width="525" height="446" key="SwitcherDM" timestamp="1605643936746">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="525" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1605643936746" />
+    <state x="1033" y="256" key="Vcs.Push.Dialog.v2" timestamp="1605354252959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1033" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605354252959" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1605549404832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605549404832" />
+    <state x="1097" y="244" key="run.anything.popup" timestamp="1605598363636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1097" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605598363636" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1605564824403">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605564824403" />
   </component>
 </project>
