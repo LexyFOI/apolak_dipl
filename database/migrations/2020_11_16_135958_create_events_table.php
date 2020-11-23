@@ -15,6 +15,7 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('owner_id');
             $table->string('event_name');
             $table->date('startDate');
             $table->date('endDate');
@@ -23,6 +24,8 @@ class CreateEventsTable extends Migration
             $table->integer('event_points');
             $table->text('event_description');
             $table->timestamps();
+
+            $table->foreign('owner_id')->references('id')->on('users');
         });
     }
 

@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdba4948-5487-48ea-a26a-74bc9a1de8ca" name="Default Changelist" comment="">
+    <list default="true" id="fdba4948-5487-48ea-a26a-74bc9a1de8ca" name="Default Changelist" comment="updating functional tests for creating events, showing them, access rights for events views.&#10;created views: index - list of events, show - details of an event, create - creating a new event">
+      <change afterPath="$PROJECT_DIR$/resources/views/events/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/events/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/EventTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/apolak_dipl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apolak_dipl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/EventFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/EventFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_16_135958_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_16_135958_create_events_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +52,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="75d2e59f-f765-42ab-b611-61238889b1ad" name="localhost" />
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP7.4.8">
     <include_path>
@@ -134,6 +165,18 @@
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
+      <path value="$PROJECT_DIR$/vendor/jenssegers/agent" />
+      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
+      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kAale7ImiKDrtgV1k7WONvhzDL" />
@@ -146,6 +189,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -153,37 +197,54 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.EventManagementTest">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Tag.php" />
+      <command value="Iluminate/Events/Dispatcher" />
+    </option>
+  </component>
+  <component name="RunManager" selected="PHPUnit.EventManagementTest.a_user_can_view_an_event">
     <configuration name="EventManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="EventManagementTest.an_event_requires_a_payment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_a_payment" scope="Method" />
+    <configuration name="EventManagementTest.a_user_can_create_an_event" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="a_user_can_create_an_event" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="EventManagementTest.an_event_requires_a_price" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_a_price" scope="Method" />
+    <configuration name="EventManagementTest.a_user_can_view_an_event" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="a_user_can_view_an_event" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="EventManagementTest.an_event_requires_an_event_description" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_an_event_description" scope="Method" />
+    <configuration name="UserTest.a_user_has_events" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="a_user_has_events" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="EventManagementTest.an_event_requires_the_points" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_the_points" scope="Method" />
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/tests" />
       <method v="2" />
     </configuration>
+    <configuration name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/apolak_dipl">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Web Page.localhost" />
+      <item itemvalue="PHPUnit.EventManagementTest" />
+      <item itemvalue="PHPUnit.EventManagementTest.a_user_can_view_an_event" />
+      <item itemvalue="PHPUnit.UserTest.a_user_has_events" />
+      <item itemvalue="PHPUnit.tests" />
+      <item itemvalue="PHPUnit.EventManagementTest.a_user_can_create_an_event" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.EventManagementTest.a_user_can_view_an_event" />
+        <item itemvalue="PHPUnit.EventManagementTest.a_user_can_create_an_event" />
+        <item itemvalue="PHPUnit.tests" />
         <item itemvalue="PHPUnit.EventManagementTest" />
-        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_the_points" />
-        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_an_event_description" />
-        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_a_price" />
-        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_a_payment" />
+        <item itemvalue="PHPUnit.UserTest.a_user_has_events" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +269,12 @@
       <workItem from="1605209635983" duration="5270000" />
       <workItem from="1605215643430" duration="30000" />
       <workItem from="1605350842749" duration="15450000" />
-      <workItem from="1605484926751" duration="36870000" />
+      <workItem from="1605484926751" duration="40742000" />
+      <workItem from="1605681655071" duration="5269000" />
+      <workItem from="1605706257842" duration="5000" />
+      <workItem from="1605788840169" duration="38653000" />
+      <workItem from="1605900544458" duration="72000" />
+      <workItem from="1605900641028" duration="64265000" />
     </task>
     <task id="LOCAL-00001" summary="creating a functional test a_student_can_be_created">
       <created>1605354217941</created>
@@ -217,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605354217941</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="creating a functional test a_user_can_create_an_event and tests for required attributes while creating some events">
+      <created>1605654239599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605654239599</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,33 +298,56 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating a functional test a_student_can_be_created" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating a functional test a_student_can_be_created" />
+    <MESSAGE value="creating a functional test a_user_can_create_an_event and tests for required attributes while creating some events" />
+    <MESSAGE value="updating functional tests for creating events, showing them, access rights for events views.&#10;created views (index - list of events, show - details of an event, create - creating a new event)" />
+    <MESSAGE value="updating functional tests for creating events, showing them, access rights for events views.&#10;created views: index - list of events, show - details of an event, create - creating a new event" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating functional tests for creating events, showing them, access rights for events views.&#10;created views: index - list of events, show - details of an event, create - creating a new event" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1027" y="89" key="CommitChangelistDialog2" timestamp="1605354215457">
+    <state x="1066" y="201" key="#Inspections" timestamp="1606042639604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1027" y="89" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605354215457" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605209595973">
+    <state x="1066" y="201" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1606042639604" />
+    <state x="954" y="152" key="#Servers" timestamp="1605706702993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605209595973" />
-    <state width="914" height="338" key="GridCell.Tab.0.bottom" timestamp="1605653890872">
+    <state x="954" y="152" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1605706702993" />
+    <state x="1000" y="127" width="894" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605725611716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
-    <state width="914" height="338" key="GridCell.Tab.0.center" timestamp="1605653890872">
+    <state x="1000" y="127" width="894" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605725611716" />
+    <state x="1053" y="100" width="774" height="847" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605822090185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
-    <state width="914" height="338" key="GridCell.Tab.0.left" timestamp="1605653890872">
+    <state x="1053" y="100" width="774" height="847" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605822090185" />
+    <state x="1231" y="224" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605997156610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
-    <state width="914" height="338" key="GridCell.Tab.0.right" timestamp="1605653890872">
+    <state x="1231" y="224" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605997156610" />
+    <state x="485" y="59" key="CommitChangelistDialog2" timestamp="1606112872902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605653890872" />
+    <state x="485" y="59" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606112872902" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605992517646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605992517646" />
+    <state width="913" height="404" key="GridCell.Tab.0.bottom" timestamp="1606112582846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="913" height="404" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
+    <state width="913" height="404" key="GridCell.Tab.0.center" timestamp="1606112582846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="913" height="404" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
+    <state width="913" height="404" key="GridCell.Tab.0.left" timestamp="1606112582846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="913" height="404" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
+    <state width="913" height="404" key="GridCell.Tab.0.right" timestamp="1606112582846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="913" height="404" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1605209597941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -272,29 +368,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605430528301" />
-    <state x="906" y="168" key="SettingsEditor" timestamp="1605453953646">
+    <state x="973" y="131" width="916" height="711" key="SettingsEditor" timestamp="1605900400448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="906" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605453953646" />
+    <state x="973" y="131" width="916" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605900400448" />
     <state width="525" height="446" key="SwitcherDM" timestamp="1605643936746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="525" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1605643936746" />
-    <state x="1033" y="256" key="Vcs.Push.Dialog.v2" timestamp="1605354252959">
+    <state x="1033" y="256" key="Vcs.Push.Dialog.v2" timestamp="1605654290113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1033" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605354252959" />
+    <state x="1033" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605654290113" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1605549404832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605549404832" />
-    <state x="1097" y="244" key="run.anything.popup" timestamp="1605598363636">
+    <state x="1097" y="244" width="672" height="677" key="run.anything.popup" timestamp="1606058985300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1097" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605598363636" />
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1605564824403">
+    <state x="1097" y="244" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606058985300" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1606056524982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605564824403" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606056524982" />
   </component>
 </project>

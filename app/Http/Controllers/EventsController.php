@@ -9,9 +9,18 @@ use Illuminate\Http\Request;
 class EventsController extends Controller
 {
     public function index(){
-        $events = Event::all();
+        $events = Event::all();//->where('startDate', ['>', '=='], now());
 
         return view('events.index', compact('events'));
+    }
+
+    public function show(Event $event){
+        //$event = Event::findOrFail(request('event'));
+        return view('events.show', compact('event'));
+    }
+
+    public function create(){
+        return view('events/create', );
     }
 
     public function store(){
@@ -22,11 +31,15 @@ class EventsController extends Controller
             'payment'=>'required',
             'price'=>'required',
             'event_points'=>'required',
-            'event_description'=>'required']);
+            'event_description'=>'required',
 
-        //persist
-       // Event::create(request(['event_name', 'startDate', 'endDate','payment','price','event_points','event_description']));
-        Event::create($attributes);
+           ]);//'owner_id' => 'required'
+
+    //    $attributes['owner_id'] = auth()->id();
+        //umjesto prethodnog postavljamo vlasnika događaja automatski:
+        auth()->user()->events()->create($attributes);
+
+      //  Event::create($attributes);
 
         //redirect
         return redirect('/events');
