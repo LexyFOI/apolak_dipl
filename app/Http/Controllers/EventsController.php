@@ -4,23 +4,26 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Event;
+use App\Models\Student;
 use Illuminate\Http\Request;
+use phpDocumentor\Reflection\DocBlock\Tags\Author;
 
 class EventsController extends Controller
 {
     public function index(){
-        $events = Event::all();//->where('startDate', ['>', '=='], now());
+       //$events = auth()->user()->events; //dohvati samo događaje prijavljenog korisnika
+        $events = Event::all();//->where('startDate', ['>', '=='], now()); //treba ih prikazat od najnoviheg prema najstarijem
 
         return view('events.index', compact('events'));
     }
 
     public function show(Event $event){
-        //$event = Event::findOrFail(request('event'));
-        return view('events.show', compact('event'));
+        $student_data = Student::all();
+        return view('events.show', compact('event', 'student_data'));
     }
 
     public function create(){
-        return view('events/create', );
+        return view('events/create');
     }
 
     public function store(){

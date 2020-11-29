@@ -18,20 +18,19 @@ class EventManagementTest extends TestCase
     {
         $attributes = Event::factory()->raw(['owner_id' => null]);
         $this->post('/events', $attributes)->assertSessionMissing('owner');
-//uključen je na post('/event', ..EventController@store)->middleware('auth'); a on automatski preusmjerava na 'login'
-
     }
+
+    /** @test */
+    public function guest_may_not_view_events(){
+        $this->get('/events')->assertRedirect('login');
+   }
 
     /** @test */
    public function a_user_can_create_an_event()
    {
        $this->withoutMiddleware();
-       $this->withoutExceptionHandling();
+       $this->signIn();
 
-       $this->actingAs(User::factory()->create()); //--> prema tutorijalu
-       //$attributes = Event::factory()->raw(['owner_id'=> Auth::user()->id]);
-
-       //ako pokušam otvoriti kreiranje događaja provjerim da se to i dogodi
        $this->get('/events/create')->assertStatus(200);
 
        $attributes= [
@@ -56,10 +55,9 @@ class EventManagementTest extends TestCase
 
    /** @test */
     public function a_user_can_view_an_event(){
-    //pregled evenata i prikaz detalja o pojedinom mogu vidjeti i gosti stranice
+        $this->signIn();
 
         $event = Event::factory()->create();
-        //$this->get('/events/'.$event->id)
             $this->get($event->path())
                 ->assertSee($event->event_name)
                 ->assertSee($event->startDate)
@@ -72,18 +70,15 @@ class EventManagementTest extends TestCase
 
    /** @test */
     public function an_event_requires_a_name(){
-       //$this->withoutMiddleware();
-        $this->actingAs(User::factory()->create());
+        $this->signIn();
 
         $attributes = Event::factory()->raw(['event_name' => '',]);
-        //$this->post('/events', [])->assertSessionHasErrors('event_name');
         $this->post('/events', $attributes)->assertSessionMissing('event_name');
     }
 
     /** @test */
     public function an_event_requires_a_start_date(){
-        //$this->withoutMiddleware();
-        $this->actingAs(User::factory()->create());
+        $this->signIn();
 
         $attributes = Event::factory()->raw(['startDate' => '',]);
         $this->post('/events', $attributes)->assertSessionMissing('startDate');
@@ -91,8 +86,7 @@ class EventManagementTest extends TestCase
 
     /** @test */
     public function an_event_requires_a_end_date(){
-        //$this->withoutMiddleware();
-        $this->actingAs(User::factory()->create());
+        $this->signIn();
 
         $attributes = Event::factory()->raw(['endDate' => '',]);
         $this->post('/events', $attributes)->assertSessionMissing('endDate');
@@ -100,8 +94,7 @@ class EventManagementTest extends TestCase
 
     /** @test */
     public function an_event_requires_a_payment(){
-       // $this->withoutMiddleware();
-        $this->actingAs(User::factory()->create());
+        $this->signIn();
 
         $attributes = Event::factory()->raw(['payment' => '',]);
         $this->post('/events', $attributes)->assertSessionMissing('payment');
@@ -109,22 +102,21 @@ class EventManagementTest extends TestCase
 
     /** @test */
     public function an_event_requires_a_price(){
-        //$this->withoutMiddleware();
+        $this->signIn();
+
         $attributes = Event::factory()->raw(['price' => '',]);
         $this->post('/events', $attributes)->assertSessionMissing('price');
     }
     /** @test */
     public function an_event_requires_the_points(){
-        //$this->withoutMiddleware();
-        $this->actingAs(User::factory()->create());
+        $this->signIn();
 
         $attributes = Event::factory()->raw(['event_points' => '',]);
         $this->post('/events', $attributes)->assertSessionMissing('event_points');
     }
     /** @test */
     public function an_event_requires_an_event_description(){
-       // $this->withoutMiddleware();
-        $this->actingAs(User::factory()->create());
+        $this->signIn();
 
         $attributes = Event::factory()->raw(['event_description' => '',]);
         $this->post('/events', $attributes)->assertSessionMissing('event_description');

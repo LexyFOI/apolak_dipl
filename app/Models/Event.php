@@ -11,6 +11,18 @@ class Event extends Model
     protected $guarded = [];
 
     public function path(){
-        return "/events/".$this->id;
+        return "/events/{$this->id}";
     }
+
+    public function owner(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function payments(){
+        return $this->hasMany(PaymentEvidence::class);
+    }
+
+  public function addStudent($student_id){
+        return $this->payments()->create(compact('student_id'));
+   }
 }

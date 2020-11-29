@@ -1,37 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdba4948-5487-48ea-a26a-74bc9a1de8ca" name="Default Changelist" comment="updating functional tests for creating events, showing them, access rights for events views.&#10;created views: index - list of events, show - details of an event, create - creating a new event">
-      <change afterPath="$PROJECT_DIR$/resources/views/events/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/events/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/EventTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/apolak_dipl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apolak_dipl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="fdba4948-5487-48ea-a26a-74bc9a1de8ca" name="Default Changelist" comment="added: Modells, controller, tests and views for Evidence Payment">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/81102431-a116-43fc-9c1d-aa17dc65ef4c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/81102431-a116-43fc-9c1d-aa17dc65ef4c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/PasswordValidationRules.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/ResetUserPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Actions/Jetstream/DeleteUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EventPaymentsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/PaymentEvidence.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/FortifyServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/JetstreamServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/AppLayout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/GuestLayout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/PaymentEvidenceFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/StudentFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_115924_create_academic_years_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_040125_create_sessions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_23_195543_create_payment_evidence_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/api/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/reset-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/two-factor-authentication-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/update-password-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tzkevidence.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/EventPaymentEvidenceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/EventFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/EventFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_16_135958_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_16_135958_create_events_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_205833_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_205833_create_students_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/EventTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/EventTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,6 +248,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TZKevidencija" />
@@ -200,27 +258,32 @@
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\Laravel\apolak_dipl\resources\views" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="Tag.php" />
       <command value="Iluminate/Events/Dispatcher" />
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.EventManagementTest.a_user_can_view_an_event">
-    <configuration name="EventManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.tests">
     <configuration name="EventManagementTest.a_user_can_create_an_event" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="a_user_can_create_an_event" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="EventManagementTest.a_user_can_view_an_event" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="a_user_can_view_an_event" scope="Method" />
+    <configuration name="EventManagementTest.an_event_requires_a_name" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventManagementTest" file="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" method="an_event_requires_a_name" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UserTest.a_user_has_events" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="a_user_has_events" scope="Method" />
+    <configuration name="EventPaymentEvidenceTest.a_payment_can_be_updated" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventPaymentEvidenceTest" file="$PROJECT_DIR$/tests/Feature/EventPaymentEvidenceTest.php" method="a_payment_can_be_updated" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EventPaymentEvidenceTest.an_event_can_have_payment_evidence" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\EventPaymentEvidenceTest" file="$PROJECT_DIR$/tests/Feature/EventPaymentEvidenceTest.php" method="an_event_can_have_payment_evidence" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -232,19 +295,19 @@
     </configuration>
     <list>
       <item itemvalue="PHP Web Page.localhost" />
-      <item itemvalue="PHPUnit.EventManagementTest" />
-      <item itemvalue="PHPUnit.EventManagementTest.a_user_can_view_an_event" />
-      <item itemvalue="PHPUnit.UserTest.a_user_has_events" />
       <item itemvalue="PHPUnit.tests" />
+      <item itemvalue="PHPUnit.EventPaymentEvidenceTest.a_payment_can_be_updated" />
+      <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_a_name" />
       <item itemvalue="PHPUnit.EventManagementTest.a_user_can_create_an_event" />
+      <item itemvalue="PHPUnit.EventPaymentEvidenceTest.an_event_can_have_payment_evidence" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.EventManagementTest.a_user_can_view_an_event" />
-        <item itemvalue="PHPUnit.EventManagementTest.a_user_can_create_an_event" />
         <item itemvalue="PHPUnit.tests" />
-        <item itemvalue="PHPUnit.EventManagementTest" />
-        <item itemvalue="PHPUnit.UserTest.a_user_has_events" />
+        <item itemvalue="PHPUnit.EventPaymentEvidenceTest.an_event_can_have_payment_evidence" />
+        <item itemvalue="PHPUnit.EventManagementTest.a_user_can_create_an_event" />
+        <item itemvalue="PHPUnit.EventManagementTest.an_event_requires_a_name" />
+        <item itemvalue="PHPUnit.EventPaymentEvidenceTest.a_payment_can_be_updated" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +337,11 @@
       <workItem from="1605706257842" duration="5000" />
       <workItem from="1605788840169" duration="38653000" />
       <workItem from="1605900544458" duration="72000" />
-      <workItem from="1605900641028" duration="64265000" />
+      <workItem from="1605900641028" duration="70265000" />
+      <workItem from="1606134222632" duration="101470000" />
+      <workItem from="1606513456413" duration="20000" />
+      <workItem from="1606513505430" duration="14113000" />
+      <workItem from="1606562758421" duration="42181000" />
     </task>
     <task id="LOCAL-00001" summary="creating a functional test a_student_can_be_created">
       <created>1605354217941</created>
@@ -290,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605654239599</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updating functional tests for creating events, showing them, access rights for events views.&#10;created views: index - list of events, show - details of an event, create - creating a new event">
+      <created>1606113752935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606113752935</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +375,9 @@
     <MESSAGE value="creating a functional test a_user_can_create_an_event and tests for required attributes while creating some events" />
     <MESSAGE value="updating functional tests for creating events, showing them, access rights for events views.&#10;created views (index - list of events, show - details of an event, create - creating a new event)" />
     <MESSAGE value="updating functional tests for creating events, showing them, access rights for events views.&#10;created views: index - list of events, show - details of an event, create - creating a new event" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating functional tests for creating events, showing them, access rights for events views.&#10;created views: index - list of events, show - details of an event, create - creating a new event" />
+    <MESSAGE value="it is installed:&#10;the authentication configuration &#10;tailwind" />
+    <MESSAGE value="added: Modells, controller, tests and views for Evidence Payment" />
+    <option name="LAST_COMMIT_MESSAGE" value="added: Modells, controller, tests and views for Evidence Payment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1066" y="201" key="#Inspections" timestamp="1606042639604">
@@ -324,30 +400,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1231" y="224" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605997156610" />
-    <state x="485" y="59" key="CommitChangelistDialog2" timestamp="1606112872902">
+    <state x="1144" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606447115203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="485" y="59" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606112872902" />
+    <state x="1144" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606447115203" />
+    <state x="1000" y="86" key="CommitChangelistDialog2" timestamp="1606650850829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1000" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606650850829" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605992517646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605992517646" />
-    <state width="913" height="404" key="GridCell.Tab.0.bottom" timestamp="1606112582846">
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom" timestamp="1606650851270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="913" height="404" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
-    <state width="913" height="404" key="GridCell.Tab.0.center" timestamp="1606112582846">
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606650851270" />
+    <state width="1877" height="221" key="GridCell.Tab.0.center" timestamp="1606650851270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="913" height="404" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
-    <state width="913" height="404" key="GridCell.Tab.0.left" timestamp="1606112582846">
+    <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606650851270" />
+    <state width="1877" height="221" key="GridCell.Tab.0.left" timestamp="1606650851269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="913" height="404" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
-    <state width="913" height="404" key="GridCell.Tab.0.right" timestamp="1606112582846">
+    <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606650851269" />
+    <state width="1877" height="221" key="GridCell.Tab.0.right" timestamp="1606650851270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="913" height="404" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606112582846" />
+    <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606650851270" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1605209597941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -376,21 +456,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="525" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1605643936746" />
-    <state x="1033" y="256" key="Vcs.Push.Dialog.v2" timestamp="1605654290113">
+    <state x="1033" y="256" key="Vcs.Push.Dialog.v2" timestamp="1606113758760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1033" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605654290113" />
+    <state x="1033" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606113758760" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1605549404832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605549404832" />
-    <state x="1097" y="244" width="672" height="677" key="run.anything.popup" timestamp="1606058985300">
+    <state x="1097" y="244" width="672" height="677" key="run.anything.popup" timestamp="1606580141723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1097" y="244" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606058985300" />
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1606056524982">
+    <state x="1097" y="244" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606580141723" />
+    <state x="752" y="378" key="scopes" timestamp="1606516768712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606056524982" />
+    <state x="752" y="378" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1606516768712" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1606648838425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606648838425" />
   </component>
 </project>
